@@ -29,5 +29,5 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-  var window: UIWindow?
+    var window: UIWindow?
 }
