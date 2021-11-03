@@ -70,9 +70,9 @@
 				B09EE67623DFEA8C006CEDE0 /* Main.storyboard */,
 				180DC61423C78D9800486B1A /* LaunchScreen.storyboard */,
 				B056BCDA23EF434B00FEB67C /* Info.plist */,
+				B09EE67223DFE6C2006CEDE0 /* Video.swift */,
 				B09EE66E23DFE0E1006CEDE0 /* VideosViewController.swift */,
 				B09EE67423DFE6D9006CEDE0 /* VideoCollectionViewCell.swift */,
-				B09EE67223DFE6C2006CEDE0 /* Video.swift */,
 				B0F557EB23EF455600314EC5 /* UIView+IBInspectable.swift */,
 			);
 			path = DiffableDataSources;
@@ -283,7 +283,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K6448RX2CR;
 				INFOPLIST_FILE = DiffableDataSources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +306,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K6448RX2CR;
 				INFOPLIST_FILE = DiffableDataSources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

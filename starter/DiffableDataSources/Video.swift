@@ -28,7 +28,8 @@
 
 import UIKit
 
-class Video {
+class Video: Hashable {
+	// UICollectionViewDiffableDataSource의 제네릭타입에 넣어주기 위해서는 Hashable 프로토콜을 채택해야 한다.
 	var id = UUID()
 	var title: String
 	var thumbnail: UIImage?
@@ -40,6 +41,14 @@ class Video {
 		self.thumbnail = thumbnail
 		self.lessonCount = lessonCount
 		self.link = link
+	}
+	
+	static func == (lhs: Video, rhs: Video) -> Bool {
+		return lhs.id == rhs.id
+	}
+	
+	func hash(into hasher: inout Hasher) {
+		hasher.combine(id)
 	}
 }
 

@@ -28,7 +28,9 @@
 
 import UIKit
 
-class VideoCollectionViewCell: UICollectionViewCell {
+final class VideoCollectionViewCell: UICollectionViewCell {
+	static let identifier: String = "VideoCollectionViewCell"
+	
 	@IBOutlet weak var thumbnailView: UIImageView!
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var subtitleLabel: UILabel!
