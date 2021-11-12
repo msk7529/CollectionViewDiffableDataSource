@@ -77,7 +77,10 @@ class VideosViewController: UICollectionViewController {
 		var snapshot = Snapshot()
 		snapshot.appendSections([.main])
 		snapshot.appendItems(videoList, toSection: nil)
-		dataSource.apply(snapshot, animatingDifferences: animatingDifferences, completion: nil)	// animatingDifferences를 false로 주면 애니메이션을 하지 않는다.
+		DispatchQueue.main.async {
+			// apply는 메인쓰레드에서 돌리는게 안전할듯?
+			self.dataSource.apply(snapshot, animatingDifferences: animatingDifferences, completion: nil)	// animatingDifferences를 false로 주면 애니메이션을 하지 않는다.
+		}
 	}
 }
 
